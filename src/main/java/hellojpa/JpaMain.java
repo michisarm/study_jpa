@@ -16,11 +16,11 @@ public class JpaMain {
 
         try{
             //등록
-//            Member member = new Member();
-//            member.setId(2L);
-//            member.setName("HelloB");
-//
-//            em.persist(member);
+            Member member = new Member();
+            member.setId(2L);
+            member.setName("HelloB");
+
+            em.persist(member);
 
             //조회
 //            Member findMember = em.find(Member.class, 1L);
@@ -41,9 +41,9 @@ public class JpaMain {
                     .setMaxResults(10)
                     .getResultList();
 
-            for(Member member: result){
-                System.out.println("member.name = "+member.getName());
-            }
+//            for(Member member: result){
+//                System.out.println("member.name = "+member.getName());
+//            }
 
 
             tx.commit();
