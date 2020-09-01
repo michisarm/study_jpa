@@ -13,8 +13,12 @@ public class JpaShopMain {
         tx.begin();
 
         try{
-//            Order order = new Order();
-//            order.addOrderItem(new OrderItem());
+            Order order = new Order();
+            Member member = new Member();
+            order.setId(1001L);
+            member.setId(100L);
+//            member.addOrders = (member);
+//            order.addOrderIte=(new OrderItem());
             tx.commit();
         } catch (Exception e) {
             tx.rollback();
